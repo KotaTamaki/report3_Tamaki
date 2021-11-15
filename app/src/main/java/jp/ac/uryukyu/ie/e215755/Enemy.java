@@ -54,15 +54,63 @@ public class Enemy {
             System.out.printf("モンスター%sは倒れた。\n", name);
         }
     }
-
+    /**
+     * @return name 
+     */
     public String getName(){
         return this.name;
     }
-
+    /**
+     * @return dead 
+     */
     public boolean isDead(){
         return this.dead;
     }
+
+    /**
+     * @return hitPoint 
+     */
     public int getHitPoint(){
         return this.hitPoint;
     }
+    /** 
+     * @return attack 
+     */
+    public int getAttack() {
+        return this.attack ;
+    }
+
+
+        /**
+     
+     * @param name 
+     */
+    public void setName(String name) {
+        this.name = name ;
+    }
+
+    /**
+     
+     * @param hitPoint 
+     */
+    public void setHitPoint(int hitPoint) {
+        this.hitPoint = hitPoint ;
+    }
+
+    /**
+     
+     * @param attack 
+     */
+    public void setAttack(int attack) {
+        this.attack = attack ;
+    }
+
+    /**
+     
+     * @param dead 
+     */
+    public void setDead(boolean dead) {
+        this.dead = dead ;
+    }
+
 }
